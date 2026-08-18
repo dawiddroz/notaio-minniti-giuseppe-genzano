@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://notaiominniti-genzano.github.io/sitemap.xml
+Sitemap: https://dawiddroz.github.io/notaio-minniti-giuseppe-genzano/sitemap.xml
