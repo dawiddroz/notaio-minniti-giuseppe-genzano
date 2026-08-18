@@ -1,0 +1,40 @@
+/* ============================================================
+   Notaio Minniti Giuseppe — Genzano di Roma
+   Design tokens — "Il notaio che risponde"
+   Palette grafite caldo + ambra · Bodoni Moda + Archivo
+   ============================================================ */
+
+:root {
+  /* Palette (unica fonte) */
+  --paper: #F6F1E8;   /* crema */
+  --ink: #2B2722;     /* grafite caldo */
+  --primary: #3A342C; /* grafite medio */
+  --accent: #C1793C;  /* ambra bruciata */
+  --deep: #1E1B17;    /* grafite quasi nero */
+  --line: #E5DCCB;    /* bordo chiaro */
+
+  /* Derivate */
+  --paper-2: #F0E9DA;   /* crema profonda per card alternate */
+  --ink-soft: #6B6258;  /* testo secondario (contrasto >= 4.5:1 su paper) */
+  --accent-soft: #D4945C; /* ambra per hover su scuro */
+  --on-deep: #EFE7D8;   /* testo chiaro su deep */
+
+  /* Font */
+  --font-display: 'Bodoni Moda', Georgia, 'Times New Roman', serif;
+  --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Layout */
+  --header-h: 72px;
+  --header-h-mobile: 64px;
+  --container: 1160px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --radius-sm: 6px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Breakpoint per il CSS (documentazione) */
+  --bp-mobile: 375px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1280px;
+}
