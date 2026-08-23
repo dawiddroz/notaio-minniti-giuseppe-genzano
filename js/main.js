@@ -92,7 +92,10 @@
     });
 
     // Riga "oggi" nella tabella orari (1=Lunedì ... 7=Domenica).
-    var todayNum = st.day === 0 ? 7 : st.day;
+    // Usa il giorno REALE odierno, non il prossimo giorno di apertura:
+    // altrimenti il venerdì evidenzierebbe "Lunedì — oggi".
+    var realDay = new Date().getDay();
+    var todayNum = realDay === 0 ? 7 : realDay;
     doc.querySelectorAll('.hours-table tr[data-day]').forEach(function (tr) {
       tr.classList.toggle('is-today', Number(tr.getAttribute('data-day')) === todayNum);
     });
